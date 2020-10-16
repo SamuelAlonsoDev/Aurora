@@ -1,11 +1,11 @@
 @echo off
 :Compile
 cls
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\%AuroraWindowsMSVC%\bin\Hostx64\x64\cl.exe" Aurora.cpp /WX /W4 /EHsc /GR- /MT /Ox /std:c++latest /D _HAS_EXCEPTIONS=0 /D AuroraWindows %AuroraWindowsExtensions% /I"C:\Program Files (x86)\Windows Kits\10\Include\%AuroraWindows10Kit%\ucrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\%AuroraWindows10Kit%\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\%AuroraWindows10Kit%\um" /I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\%AuroraWindowsMSVC%\include" /I%~dp0 /link /LIBPATH "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\%AuroraWindowsMSVC%\lib\x64\*.lib" /LIBPATH "C:\Program Files (x86)\Windows Kits\10\Lib\%AuroraWindows10Kit%\um\x64\*.lib" /LIBPATH "C:\Program Files (x86)\Windows Kits\10\Lib\%AuroraWindows10Kit%\ucrt\x64\*.lib" /SUBSYSTEM:"%AuroraWindowsSubsystem%" /out:"%AuroraWindowsExeName%.exe"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\%AuroraWindowsMSVC%\bin\Hostx64\x64\cl.exe" Aurora.cpp /WX /W4 /EHsc /GR- /MT /Ox /std:c++latest /D _HAS_EXCEPTIONS=0 /D AuroraWindows %AuroraWindowsExtensions% /I"C:\Program Files (x86)\Windows Kits\10\Include\%AuroraWindows10Kit%\ucrt" /I"C:\Program Files (x86)\Windows Kits\10\Include\%AuroraWindows10Kit%\shared" /I"C:\Program Files (x86)\Windows Kits\10\Include\%AuroraWindows10Kit%\um" /I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\%AuroraWindowsMSVC%\include" /I%~dp0 /link /LIBPATH "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\%AuroraWindowsMSVC%\lib\x64\*.lib" /LIBPATH "C:\Program Files (x86)\Windows Kits\10\Lib\%AuroraWindows10Kit%\um\x64\*.lib" /LIBPATH "C:\Program Files (x86)\Windows Kits\10\Lib\%AuroraWindows10Kit%\ucrt\x64\*.lib" /SUBSYSTEM:"%AuroraWindowsSubsystem%" /out:"%~dp0..\AuroraOutput\%AuroraWindowsExeName%.exe"
 IF EXIST Aurora.obj DEL /F Aurora.obj
 pause
 cls
-%AuroraWindowsExeName%.exe
+"%~dp0..\AuroraOutput\%AuroraWindowsExeName%.exe"
 echo[
 echo[
 set /p Recompile=Press 'r' to recompile or any other key to exit...
