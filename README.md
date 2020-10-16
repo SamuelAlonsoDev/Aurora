@@ -1,1 +1,1 @@
-C++20 modern framework Aurora
+C++20 modern general-purpose framework Aurora
