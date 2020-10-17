@@ -1,4 +1,10 @@
 @echo off
+:AskName
+set /p qqqq=Would you like to change the output name[Y/N]? 
+IF "%qqqq%"=="Y" goto :Name
+IF "%qqqq%"=="N" goto :AskConsole
+goto :AskName
+:Name
 set /p a=Executable name[e.g, Aurora]: 
 setx AuroraWindowsExeName %a%
 echo[
