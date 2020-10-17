@@ -5,22 +5,34 @@ echo[
 :AskConsole
 set /p Console=Specify if that is a console project[Y/N]: 
 echo[
+set aaaa="WINDOWS"
+IF "%Console%"=="Y" set aaaa="CONSOLE"
+setx AuroraWindowsSubsystem %aaaa%
+set CArch=/D WIN32_LEAN_AND_MEAN
+IF "%Console%"=="Y" set CArch=%CArch% /D AuroraConsole
 IF "%Console%"=="Y" goto :Continue
 IF "%Console%"=="N" goto :Continue
 goto :AskConsole
 :Continue
-set aaaa="WINDOWS"
-IF "%Console%"=="Y" set aaaa="CONSOLE"
-setx AuroraWindowsSubsystem %aaaa%
+set /p qq=Would you like to change the MSVC version[Y/N]? 
+IF "%qq%"=="Y" goto :ChangeMSVC
+IF "%qq%"=="N" goto :AskKit
+goto :Continue
+:ChangeMSVC
 set /p aa=MSVC version[e.g, 14.27.29110]: 
 setx AuroraWindowsMSVC %aa%
 echo[
+:AskKit
+set /p qqq=Would you like to change the Windows 10 Kit version[Y/N]? 
+IF "%qqq%"=="Y" goto :Kit
+IF "%qqq%"=="N" goto :Archg
+goto :AskKit
+:Kit
 set /p aaa=Windows 10 Kit version[e.g, 10.0.19041.0]: 
 setx AuroraWindows10Kit %aaa%
 echo[
-set /p Arch=Architecture extensions[separated by an space, e.g, avx avx2 sse3]: 
-set CArch=/D WIN32_LEAN_AND_MEAN
-IF "%Console%"=="Y" set CArch=%CArch% /D AuroraConsole
+:Archg
+set /p Arch=Architecture extensions[empty or separated by an space, e.g, avx avx2 sse3]: 
 for /f "delims=" %%t in ("%Arch%") do (
     IF "%t%"=="xsave" set CArch=%CArch% /D AuroraXsave
     IF "%t%"=="waitpkg" set CArch=%CArch% /D AuroraWaitpkg
