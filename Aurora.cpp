@@ -1,15 +1,13 @@
 #include <iostream>
-#include <Concepts/IsSize.hpp>
+#include <Concepts/IsBasic.hpp>
 
 int main()
 {
     std::cout << std::boolalpha <<
     
-    "Is the size of u8 of 1 byte? " << 
-    Aurora::Concepts::IsSize<Aurora::u8, 1u> <<
-
-    "\nIs the size of u8 of 2 bytes? " << 
-    Aurora::Concepts::IsSize<Aurora::u8, 2u>;
+    "u8: " << Aurora::Concepts::IsBasic<Aurora::u8>
+    <<
+    "\nc: " << Aurora::Concepts::IsBasic<c>;
     
     return 0;
 }
