@@ -1,8 +1,6 @@
 #include <iostream>
 #include <Concepts/IsSize.hpp>
 
-class c{};
-
 int main()
 {
     std::cout << std::boolalpha <<
