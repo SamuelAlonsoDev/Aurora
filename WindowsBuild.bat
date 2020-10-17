@@ -5,10 +5,11 @@ cls
 IF EXIST Aurora.obj DEL /F Aurora.obj
 pause
 cls
+:Execute
 %AuroraWindowsExeName%.exe
 echo[
 echo[
-set /p Recompile=Press 'r' to recompile or any other key to exit...
+set /p Recompile=Press 'r' to recompile, 'e' to execute again, or any other key to exit...
 echo[
 IF "%Recompile%"=="r" goto :Compile
-exit
+IF "%Recompile%"=="e" goto :Execute
