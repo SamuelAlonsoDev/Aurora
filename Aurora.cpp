@@ -1,15 +1,17 @@
 #include <iostream>
-#include <Concepts/IsInteger.hpp>
+#include <Concepts/IsSize.hpp>
 
 class c{};
 
 int main()
 {
-    std::cout << std::boolalpha << "s8: " <<
+    std::cout << std::boolalpha <<
     
-    Aurora::Concepts::IsInteger<Aurora::s8> <<
+    "Is the size of u8 of 1 byte? " << 
+    Aurora::Concepts::IsSize<Aurora::u8, 1u> <<
 
-    "\nc: " << Aurora::Concepts::IsInteger<c>;
+    "\nIs the size of u8 of 2 bytes? " << 
+    Aurora::Concepts::IsSize<Aurora::u8, 2u>;
     
     return 0;
 }
