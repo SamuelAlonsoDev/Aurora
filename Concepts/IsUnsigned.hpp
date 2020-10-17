@@ -11,6 +11,12 @@ namespace Aurora
             constexpr static bool Value = false;
         };
 
+        template<> class IsUnsignedClass<bool>
+        {
+        public:
+            constexpr static bool Value = true;
+        };
+
         template<> class IsUnsignedClass<u8>
         {
         public:
