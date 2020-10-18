@@ -1,9 +1,10 @@
 #include <iostream>
-#include <Concepts/IsEnum.hpp>
+#include <Concepts/IsClass.hpp>
+
+class i;
 
 class c{};
 
-//btw, you should use 'enum class'
 enum n{};
 
 enum class e{};
@@ -11,8 +12,9 @@ enum class e{};
 int main()
 {
     std::cout << std::boolalpha <<
-    "\nIs 'c' an enum? " << Aurora::Concepts::IsEnum<c> << 
-    "\nIs 'n' an enum? " << Aurora::Concepts::IsEnum<n> <<
-    "\nIs 'e' an enum? " << Aurora::Concepts::IsEnum<e>;
+    "\nIs 'i' a class? " << Aurora::Concepts::IsClass<i> <<
+    "\nIs 'c' a class? " << Aurora::Concepts::IsClass<c> << 
+    "\nIs 'n' a class? " << Aurora::Concepts::IsClass<n> <<
+    "\nIs 'e' a class? " << Aurora::Concepts::IsClass<e>;
     return 0;
 }
