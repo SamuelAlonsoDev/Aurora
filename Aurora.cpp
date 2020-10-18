@@ -1,14 +1,18 @@
 #include <iostream>
 #include <Core/Types.hpp>
-#include <Concepts/IsConst.hpp>
+#include <Concepts/IsPointer.hpp>
 
 int main()
 {
-    const Aurora::s32 a = 4;
-    Aurora::s32 b;
+    Aurora::s32 c = 4;
+
+    Aurora::s32* a = &c;
+    Aurora::s32 b = c;
 
     std::cout << std::boolalpha <<
-    "\nIs 'a' const? " << Aurora::Concepts::IsConst<decltype(a)> <<
-    "\nIs 'b' const? " << Aurora::Concepts::IsConst<decltype(b)>;
+    "\nIs 'a' a pointer? " << 
+    Aurora::Concepts::IsPointer<decltype(a)> <<
+    "\nIs 'b' a pointer? " << 
+    Aurora::Concepts::IsPointer<decltype(b)>;
     return 0;
 }
