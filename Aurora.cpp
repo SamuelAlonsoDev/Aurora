@@ -4,13 +4,10 @@
 
 int main()
 {
-    Aurora::s32 a;
-    Aurora::s32 b[2];
-    
     std::cout << std::boolalpha <<
-    "\nIs 'a' an array? " << 
-    Aurora::Concepts::IsArray<decltype(a)> <<
-    "\nIs 'b' an array? " << 
-    Aurora::Concepts::IsArray<decltype(b)>;
+    "\nIs 'Aurora::s32' an array? " << 
+    Aurora::Concepts::IsArray<Aurora::s32> <<
+    "\nIs 'Aurora::s32[]' an array? " << 
+    Aurora::Concepts::IsArray<Aurora::s32[]>;
     return 0;
 }
