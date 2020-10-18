@@ -1,6 +1,15 @@
 @echo off
+:AskEdition
+set /p qqqqq=Would you like to specify the VS edition[Y/N]? 
+IF "%qqqqq%"=="Y" goto :Edition
+IF "%qqqqq%"=="N" goto :AskName
+goto :AskEdition
+:Edition
+set /p qqqqqq=Please specify the VS edition[i.e., Enterprise]: 
+setx AuroraWindowsVSEdition %qqqqqq%
+echo[
 :AskName
-set /p qqqq=Would you like to change the output name[Y/N]? 
+set /p qqqq=Would you like to specify the output name[Y/N]? 
 IF "%qqqq%"=="Y" goto :Name
 IF "%qqqq%"=="N" goto :AskConsole
 goto :AskName
