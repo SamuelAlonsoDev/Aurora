@@ -1,11 +1,14 @@
-#include <Core/Types.hpp>
-#include <Concepts/RemoveConst.hpp>
+#include <iostream>
+#include <Concepts/IsUnion.hpp>
+
+class c{};
+
+union u{};
 
 int main()
 {
-    const Aurora::s32 a = 4;
-    a = 3;
-    Aurora::Concepts::RemoveConst<decltype(a)> b = 4;
-    b = 3;
+    std::cout << std::boolalpha <<
+    "\nIs 'c' a union? " << Aurora::Concepts::IsUnion<c> <<
+    "\nIs 'u' a union? " << Aurora::Concepts::IsUnion<u>;
     return 0;
 }
