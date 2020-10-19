@@ -6,4 +6,4 @@ Series of video-tutorials on its usage at https://www.youtube.com/playlist?list=
 
 Certain files such as Core/Exception.hpp and Core/Intrinsics.hpp are not documented since its usage is not meant to be available for the general public, but more for internal functionalities.
 
-<a href="https://github.com/SamuelAlonsoDev/Aurora/blob/master/Documentation/index.html">Official Documentation</a>
+<a href="https://github.com/SamuelAlonsoDev/Aurora/blob/master/Documentation/html/index.html">Official Documentation</a>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['u8_2',['u8',['../namespace_aurora.html#a702c55e81747bef84bdb85671a815642',1,'Aurora']]]
+  ['types_2ehpp_2',['Types.hpp',['../_types_8hpp.html',1,'']]]
 ];
