@@ -5,7 +5,7 @@ IF "%qqqqq%"=="Y" goto :Edition
 IF "%qqqqq%"=="N" goto :AskName
 goto :AskEdition
 :Edition
-set /p qqqqqq=Please specify the VS edition[i.e., Enterprise]: 
+set /p qqqqqq=Please drive to 'C:\Program Files (x86)\Microsoft Visual Studio\2019' specify the VS edition[i.e., Enterprise]: 
 setx AuroraWindowsVSEdition %qqqqqq%
 echo[
 :AskName
@@ -34,7 +34,7 @@ IF "%qq%"=="Y" goto :ChangeMSVC
 IF "%qq%"=="N" goto :AskKit
 goto :Continue
 :ChangeMSVC
-set /p aa=MSVC version[e.g, 14.27.29110]: 
+set /p aa=Drive to C:\Program Files (x86)\Microsoft Visual Studio\2019\Edition\VC\Tools\MSVC and specify the MSVC version[e.g, 14.27.29110]: 
 setx AuroraWindowsMSVC %aa%
 echo[
 :AskKit
@@ -43,7 +43,7 @@ IF "%qqq%"=="Y" goto :Kit
 IF "%qqq%"=="N" goto :Archg
 goto :AskKit
 :Kit
-set /p aaa=Windows 10 Kit version[e.g, 10.0.19041.0]: 
+set /p aaa=Drive to C:\Program Files (x86)\Windows Kits\10\Lib and specify the Windows 10 Kit version[e.g, 10.0.19041.0]: 
 setx AuroraWindows10Kit %aaa%
 echo[
 :Archg
