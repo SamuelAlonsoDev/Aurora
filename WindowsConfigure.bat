@@ -21,10 +21,11 @@ echo[
 set /p Console=Specify if that is a console project[Y/N]: 
 echo[
 set aaaa="WINDOWS"
+set aaaaa= 
 IF "%Console%"=="Y" set aaaa="CONSOLE"
-IF "%Console%"=="Y" setx AuroraUseConsole="Y"
+IF "%Console%"=="Y" set aaaaa=/D AuroraConsole
 setx AuroraWindowsSubsystem %aaaa%
-set CArch=/D WIN32_LEAN_AND_MEAN
+setx AuroraUseConsole "%aaaaa%"
 IF "%Console%"=="Y" goto :Continue
 IF "%Console%"=="N" goto :Continue
 goto :AskConsole
@@ -48,6 +49,7 @@ setx AuroraWindows10Kit %aaa%
 echo[
 :Archg
 set /p Arch=Architecture extensions[empty or separated by an space, e.g, avx avx2 sse3]: 
+set CArch=/D WIN32_LEAN_AND_MEAN
 for /f "delims=" %%t in ("%Arch%") do (
     IF "%t%"=="xsave" set CArch=%CArch% /D AuroraXsave
     IF "%t%"=="waitpkg" set CArch=%CArch% /D AuroraWaitpkg

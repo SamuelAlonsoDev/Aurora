@@ -8,4 +8,12 @@ Certain files such as Core/Exception.hpp and Core/Intrinsics.hpp are not documen
 
 Remember, anything that's not documented isn't meant to be used by you
 
-<a href="https://samuelalonsodev.github.io/AuroraDocs/">Official Documentation</a>
+#BUILD WINDOWS
+
+```
+git clone https://github.com/SamuelAlonsoDev/Aurora.git
+```
+
+Then run only once WindowsConfigure.bat and fill all the requirements it rquests you.
+
+Run WindowsBuild.bat as many times to compile

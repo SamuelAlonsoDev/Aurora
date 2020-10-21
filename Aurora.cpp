@@ -3,7 +3,7 @@
 
 int main()
 {
-    
+    std::cout << "Hello Aurora!";
     return 0;
 }
 #elif defined(AuroraWindows)
