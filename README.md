@@ -6,7 +6,9 @@ The file Engine/Behaviour.hpp is not documented since its usage is meant for the
 
 Certain files such as Core/Exception.hpp and Core/Intrinsics.hpp are not documented since its usage is not meant to be available for the general public, but more for internal functionalities.
 
-Remember, anything that's not documented isn't meant to be used by you
+Remember, anything that's not documented isn't meant to be used by you.
+
+The documentation is embedded inside the folder Documentation/html.
 
 #BUILD WINDOWS
 
