@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['u16_39',['u16',['../namespace_aurora.html#ab9bfb6dc1aea80a006fb536c1e9c2d10',1,'Aurora']]],
-  ['u32_40',['u32',['../namespace_aurora.html#a3a65b4b5ccd49462165ec09c783b3f32',1,'Aurora']]],
-  ['u64_41',['u64',['../namespace_aurora.html#ac6e7e548c0d9c68fca3dc9b5bf52c728',1,'Aurora']]],
-  ['u8_42',['u8',['../namespace_aurora.html#a702c55e81747bef84bdb85671a815642',1,'Aurora']]]
+  ['relocate_33',['Relocate',['../namespace_aurora_1_1_u_i_1_1_main_window.html#a009140884860413cd649be819c394a6c',1,'Aurora::UI::MainWindow']]],
+  ['removeconst_34',['RemoveConst',['../namespace_aurora_1_1_concepts.html#abcfd987daa3ea6520ec4f39d072b5b08',1,'Aurora::Concepts']]],
+  ['removeconst_2ehpp_35',['RemoveConst.hpp',['../_remove_const_8hpp.html',1,'']]],
+  ['removepointer_36',['RemovePointer',['../namespace_aurora_1_1_concepts.html#aa1d5d22d653c95c01b9d267fe52f2c5a',1,'Aurora::Concepts']]],
+  ['removepointer_2ehpp_37',['RemovePointer.hpp',['../_remove_pointer_8hpp.html',1,'']]],
+  ['removereferences_38',['RemoveReferences',['../namespace_aurora_1_1_concepts.html#aa68ca61e9e7a680d0dffd5f2f5be9454',1,'Aurora::Concepts']]],
+  ['removereferences_2ehpp_39',['RemoveReferences.hpp',['../_remove_references_8hpp.html',1,'']]],
+  ['resize_40',['Resize',['../namespace_aurora_1_1_u_i_1_1_main_window.html#ab0b92643f022f2fd75849679dc9beaf6',1,'Aurora::UI::MainWindow']]]
 ];
