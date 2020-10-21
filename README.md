@@ -12,7 +12,7 @@ The documentation is embedded inside the folder Documentation/html, however, an 
 
 ## Build for Windows
 
-Download the project using Git by running the command:
+Download the project using Git, by running the following command:
 ```
 git clone https://github.com/SamuelAlonsoDev/Aurora.git
 ```
