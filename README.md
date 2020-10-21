@@ -8,7 +8,7 @@ Certain files such as Core/Exception.hpp and Core/Intrinsics.hpp are not documen
 
 Remember, anything that's not documented isn't meant to be used by you.
 
-The documentation is embedded inside the folder Documentation/html.
+The documentation is embedded inside the folder Documentation/html, however, an only-docs repository can be found at <a href="https://github.com/SamuelAlonsoDev/AuroraDocs">here</a>, and the documentation website at <a href="https://samuelalonsodev.github.io/AuroraDocs/">here</a>.
 
 ## Build for Windows
 
@@ -23,4 +23,4 @@ Then run only once WindowsConfigure.bat and fill all the requirements.
 
 
 
-Run WindowsBuild.bat as many times to compile
+Run WindowsBuild.bat as many times you want to compile
