@@ -22,9 +22,9 @@ set /p Console=Specify if that is a console project[Y/N]:
 echo[
 set aaaa="WINDOWS"
 IF "%Console%"=="Y" set aaaa="CONSOLE"
+IF "%Console%"=="Y" setx AuroraUseConsole="Y"
 setx AuroraWindowsSubsystem %aaaa%
 set CArch=/D WIN32_LEAN_AND_MEAN
-IF "%Console%"=="Y" set CArch=%CArch% /D AuroraConsole
 IF "%Console%"=="Y" goto :Continue
 IF "%Console%"=="N" goto :Continue
 goto :AskConsole

@@ -6,6 +6,8 @@ namespace Aurora
     enum class Exception : u16
     {
         None,
+        MainWindowResize,
+        MainWindowRelocate,
         
     };
 
