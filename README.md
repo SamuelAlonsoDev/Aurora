@@ -1,6 +1,6 @@
 ![image](https://github.com/SamuelAlonsoDev/Aurora/blob/master/logo1.PNG)
 
-C++20 modern general-purpose production-ready framework Aurora
+C++20 modern general-purpose production-ready Windows-only(by now) framework Aurora
 
 The file Engine/Behaviour.hpp is not documented since its usage is meant for the users.
 
