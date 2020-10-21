@@ -18,7 +18,7 @@ LRESULT CALLBACK WndProc(HWND h, UINT u, WPARAM w, LPARAM l)
     Aurora::UI::MainWindow::AuroraCPUDescriptorHandle rtv;
     ID3D12CommandList* commandLists[1];
     UINT presentFlags = Aurora::UI::MainWindow::Tearing ? DXGI_PRESENT_ALLOW_TEARING : 0;
-    const FLOAT BackColor[] = {1.f, 0.6f, 0.9f, 1.0f};
+    const FLOAT BackColor[] = {0.f, 0.f, 0.f, 1.0f};
     switch(u)
     {
         case WM_PAINT:
