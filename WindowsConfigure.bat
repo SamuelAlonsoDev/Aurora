@@ -21,9 +21,9 @@ echo[
 set /p Console=Specify if that is a console project[Y/N]: 
 echo[
 set aaaa="WINDOWS"
-set aaaaa= 
+set aaaaa=/D AuroraWindows
 IF "%Console%"=="Y" set aaaa="CONSOLE"
-IF "%Console%"=="Y" set aaaaa=/D AuroraConsole
+IF "%Console%"=="Y" set aaaaa=%aaaaa% /D AuroraConsole
 setx AuroraWindowsSubsystem %aaaa%
 setx AuroraUseConsole "%aaaaa%"
 IF "%Console%"=="Y" goto :Continue
