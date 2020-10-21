@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['types_2ehpp_10',['Types.hpp',['../_types_8hpp.html',1,'']]]
+  ['s16_34',['s16',['../namespace_aurora.html#a9b77b4d747769c0a17ae115426534cb9',1,'Aurora']]],
+  ['s32_35',['s32',['../namespace_aurora.html#aa10eec40b5f01940957515b372cf62af',1,'Aurora']]],
+  ['s64_36',['s64',['../namespace_aurora.html#ae932997fb0e0ace971f3d666185daa22',1,'Aurora']]],
+  ['s8_37',['s8',['../namespace_aurora.html#acb11ea86ad44649a1c932cbbf2a1f249',1,'Aurora']]]
 ];

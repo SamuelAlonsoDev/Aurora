@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['u16_26',['u16',['../namespace_aurora.html#ab9bfb6dc1aea80a006fb536c1e9c2d10',1,'Aurora']]],
-  ['u32_27',['u32',['../namespace_aurora.html#a3a65b4b5ccd49462165ec09c783b3f32',1,'Aurora']]],
-  ['u64_28',['u64',['../namespace_aurora.html#ac6e7e548c0d9c68fca3dc9b5bf52c728',1,'Aurora']]],
-  ['u8_29',['u8',['../namespace_aurora.html#a702c55e81747bef84bdb85671a815642',1,'Aurora']]]
+  ['s16_78',['s16',['../namespace_aurora.html#a9b77b4d747769c0a17ae115426534cb9',1,'Aurora']]],
+  ['s32_79',['s32',['../namespace_aurora.html#aa10eec40b5f01940957515b372cf62af',1,'Aurora']]],
+  ['s64_80',['s64',['../namespace_aurora.html#ae932997fb0e0ace971f3d666185daa22',1,'Aurora']]],
+  ['s8_81',['s8',['../namespace_aurora.html#acb11ea86ad44649a1c932cbbf2a1f249',1,'Aurora']]]
 ];

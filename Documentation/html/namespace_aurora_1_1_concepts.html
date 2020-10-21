@@ -68,22 +68,175 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Aurora::Concepts Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:abcfd987daa3ea6520ec4f39d072b5b08"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:abcfd987daa3ea6520ec4f39d072b5b08"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#abcfd987daa3ea6520ec4f39d072b5b08">RemoveConst</a> = typename RemoveConstClass&lt; T &gt;::Type</td></tr>
+<tr class="memdesc:abcfd987daa3ea6520ec4f39d072b5b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time T without const qualifier if any.  <a href="namespace_aurora_1_1_concepts.html#abcfd987daa3ea6520ec4f39d072b5b08">More...</a><br /></td></tr>
+<tr class="separator:abcfd987daa3ea6520ec4f39d072b5b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d5d22d653c95c01b9d267fe52f2c5a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa1d5d22d653c95c01b9d267fe52f2c5a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#aa1d5d22d653c95c01b9d267fe52f2c5a">RemovePointer</a> = typename RemovePointerClass&lt; T &gt;::Type</td></tr>
+<tr class="memdesc:aa1d5d22d653c95c01b9d267fe52f2c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time T without pointer type if any.  <a href="namespace_aurora_1_1_concepts.html#aa1d5d22d653c95c01b9d267fe52f2c5a">More...</a><br /></td></tr>
+<tr class="separator:aa1d5d22d653c95c01b9d267fe52f2c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#aa68ca61e9e7a680d0dffd5f2f5be9454">RemoveReferences</a> = typename RemoveReferencesClass&lt; T &gt;::Type</td></tr>
+<tr class="memdesc:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time T without references if any.  <a href="namespace_aurora_1_1_concepts.html#aa68ca61e9e7a680d0dffd5f2f5be9454">More...</a><br /></td></tr>
+<tr class="separator:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a3feb7b906fc55e1c446eee0c678d0e0b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a3feb7b906fc55e1c446eee0c678d0e0b"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a3feb7b906fc55e1c446eee0c678d0e0b">IsArray</a> = IsArrayClass&lt;T&gt;::Value</td></tr>
+<tr class="memdesc:a3feb7b906fc55e1c446eee0c678d0e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is an array <br  />
+ <br  />
+ Remember that arrays stored at memory are converted into pointers, so it wont work with examples like: <br  />
+ <a class="el" href="namespace_aurora.html#a702c55e81747bef84bdb85671a815642" title="8-bits unsigned integer type">Aurora::u8</a> u[1]; <br  />
+ if(Aurora::Concepts::IsArray&lt;decltype(u)&gt;) &lt;- false, 'u' is already a pointer.  <a href="namespace_aurora_1_1_concepts.html#a3feb7b906fc55e1c446eee0c678d0e0b">More...</a><br /></td></tr>
+<tr class="separator:a3feb7b906fc55e1c446eee0c678d0e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61bb93dfa5f7e3669a42e7b42ebe9984"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a61bb93dfa5f7e3669a42e7b42ebe9984"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a61bb93dfa5f7e3669a42e7b42ebe9984">IsBasic</a> = IsBasicClass&lt;T&gt;::Value</td></tr>
-<tr class="memdesc:a61bb93dfa5f7e3669a42e7b42ebe9984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if T is a basic type <br  />
+<tr class="memdesc:a61bb93dfa5f7e3669a42e7b42ebe9984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is a basic type <br  />
  <br  />
  Basic types are: bool, u8, s8, u16, s16, u32, s32, f32, u64, s64 and f64.  <a href="namespace_aurora_1_1_concepts.html#a61bb93dfa5f7e3669a42e7b42ebe9984">More...</a><br /></td></tr>
 <tr class="separator:a61bb93dfa5f7e3669a42e7b42ebe9984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204275c5ef875d8503cc58fee336cd38"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a204275c5ef875d8503cc58fee336cd38"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a204275c5ef875d8503cc58fee336cd38">IsClass</a> = __is_class(T)</td></tr>
+<tr class="memdesc:a204275c5ef875d8503cc58fee336cd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is a class <br  />
+ <br  />
+ CLasses are: incomplete class, incomplete struct, class and struct.  <a href="namespace_aurora_1_1_concepts.html#a204275c5ef875d8503cc58fee336cd38">More...</a><br /></td></tr>
+<tr class="separator:a204275c5ef875d8503cc58fee336cd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ace13f1e640a3acc4e4de847fd7dfd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a91ace13f1e640a3acc4e4de847fd7dfd"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a91ace13f1e640a3acc4e4de847fd7dfd">IsConst</a> = IsConstClass&lt;T&gt;::Value</td></tr>
+<tr class="memdesc:a91ace13f1e640a3acc4e4de847fd7dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T has const qualifier.  <a href="namespace_aurora_1_1_concepts.html#a91ace13f1e640a3acc4e4de847fd7dfd">More...</a><br /></td></tr>
+<tr class="separator:a91ace13f1e640a3acc4e4de847fd7dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae8e282157abfee4b734fc63276101d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a4ae8e282157abfee4b734fc63276101d"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a4ae8e282157abfee4b734fc63276101d">IsEnum</a> = __is_enum(T)</td></tr>
+<tr class="memdesc:a4ae8e282157abfee4b734fc63276101d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is an enumeration <br  />
+ <br  />
+ Enumerations are: enum and enum class.  <a href="namespace_aurora_1_1_concepts.html#a4ae8e282157abfee4b734fc63276101d">More...</a><br /></td></tr>
+<tr class="separator:a4ae8e282157abfee4b734fc63276101d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbf83193fbda0d069de7c960961b400"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7bbf83193fbda0d069de7c960961b400"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a7bbf83193fbda0d069de7c960961b400">IsFloatingPoint</a> = IsFloatingPointClass&lt;T&gt;::Value</td></tr>
+<tr class="memdesc:a7bbf83193fbda0d069de7c960961b400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is a floating-point type <br  />
+ <br  />
+ Floating-point types are: f32 and f64.  <a href="namespace_aurora_1_1_concepts.html#a7bbf83193fbda0d069de7c960961b400">More...</a><br /></td></tr>
+<tr class="separator:a7bbf83193fbda0d069de7c960961b400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efcbc6c0053d63a05c273ddd73caf9b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a1efcbc6c0053d63a05c273ddd73caf9b"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a1efcbc6c0053d63a05c273ddd73caf9b">IsInteger</a> = IsIntegerClass&lt;T&gt;::Value</td></tr>
+<tr class="memdesc:a1efcbc6c0053d63a05c273ddd73caf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is an integer type <br  />
+ <br  />
+ Integer types are: bool, u8, s8, u16, s16, u32, s32, u64 and s64.  <a href="namespace_aurora_1_1_concepts.html#a1efcbc6c0053d63a05c273ddd73caf9b">More...</a><br /></td></tr>
+<tr class="separator:a1efcbc6c0053d63a05c273ddd73caf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fb4993da77e1d46154387f17debf97"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a39fb4993da77e1d46154387f17debf97"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a39fb4993da77e1d46154387f17debf97">IsPointer</a> = IsPointerClass&lt;T&gt;::Value</td></tr>
+<tr class="memdesc:a39fb4993da77e1d46154387f17debf97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is a pointer.  <a href="namespace_aurora_1_1_concepts.html#a39fb4993da77e1d46154387f17debf97">More...</a><br /></td></tr>
+<tr class="separator:a39fb4993da77e1d46154387f17debf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8ec2933f9d94eadb8357ad6bbb3bff"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a8e8ec2933f9d94eadb8357ad6bbb3bff"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a8e8ec2933f9d94eadb8357ad6bbb3bff">IsSigned</a> = IsSignedClass&lt;T&gt;::Value</td></tr>
+<tr class="memdesc:a8e8ec2933f9d94eadb8357ad6bbb3bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is a signed type <br  />
+ <br  />
+ Signed types are: s8, s16, s32, f32, s64 and f64.  <a href="namespace_aurora_1_1_concepts.html#a8e8ec2933f9d94eadb8357ad6bbb3bff">More...</a><br /></td></tr>
+<tr class="separator:a8e8ec2933f9d94eadb8357ad6bbb3bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a07331a41f9c03710679bd71f029f5"><td class="memTemplParams" colspan="2">template&lt;class T , const u64 Size&gt; </td></tr>
+<tr class="memitem:ac4a07331a41f9c03710679bd71f029f5"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#ac4a07331a41f9c03710679bd71f029f5">IsSize</a> = sizeof(T) == Size</td></tr>
+<tr class="memdesc:ac4a07331a41f9c03710679bd71f029f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T size is the same as specified at Size.  <a href="namespace_aurora_1_1_concepts.html#ac4a07331a41f9c03710679bd71f029f5">More...</a><br /></td></tr>
+<tr class="separator:ac4a07331a41f9c03710679bd71f029f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36dd4ea99a59d609f1ccfefe24e937bb"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a36dd4ea99a59d609f1ccfefe24e937bb"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a36dd4ea99a59d609f1ccfefe24e937bb">IsUnion</a> = __is_union(T)</td></tr>
+<tr class="memdesc:a36dd4ea99a59d609f1ccfefe24e937bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is a union.  <a href="namespace_aurora_1_1_concepts.html#a36dd4ea99a59d609f1ccfefe24e937bb">More...</a><br /></td></tr>
+<tr class="separator:a36dd4ea99a59d609f1ccfefe24e937bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142eeaf178f6171cfc7fa675d4c655e6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a142eeaf178f6171cfc7fa675d4c655e6"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a142eeaf178f6171cfc7fa675d4c655e6">IsUnsigned</a> = IsUnsignedClass&lt;T&gt;::Value</td></tr>
+<tr class="memdesc:a142eeaf178f6171cfc7fa675d4c655e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is an unsigned type <br  />
+ <br  />
+ Unsigned types are: bool, u8, u16, u32 and u64.  <a href="namespace_aurora_1_1_concepts.html#a142eeaf178f6171cfc7fa675d4c655e6">More...</a><br /></td></tr>
+<tr class="separator:a142eeaf178f6171cfc7fa675d4c655e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="abcfd987daa3ea6520ec4f39d072b5b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfd987daa3ea6520ec4f39d072b5b08">&#9670;&nbsp;</a></span>RemoveConst</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_aurora_1_1_concepts.html#abcfd987daa3ea6520ec4f39d072b5b08">Aurora::Concepts::RemoveConst</a> = typedef typename RemoveConstClass&lt;T&gt;::Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time T without const qualifier if any. </p>
+
+</div>
+</div>
+<a id="aa1d5d22d653c95c01b9d267fe52f2c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d5d22d653c95c01b9d267fe52f2c5a">&#9670;&nbsp;</a></span>RemovePointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_aurora_1_1_concepts.html#aa1d5d22d653c95c01b9d267fe52f2c5a">Aurora::Concepts::RemovePointer</a> = typedef typename RemovePointerClass&lt;T&gt;::Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time T without pointer type if any. </p>
+
+</div>
+</div>
+<a id="aa68ca61e9e7a680d0dffd5f2f5be9454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68ca61e9e7a680d0dffd5f2f5be9454">&#9670;&nbsp;</a></span>RemoveReferences</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_aurora_1_1_concepts.html#aa68ca61e9e7a680d0dffd5f2f5be9454">Aurora::Concepts::RemoveReferences</a> = typedef typename RemoveReferencesClass&lt;T&gt;::Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time T without references if any. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a3feb7b906fc55e1c446eee0c678d0e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3feb7b906fc55e1c446eee0c678d0e0b">&#9670;&nbsp;</a></span>IsArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsArray = IsArrayClass&lt;T&gt;::Value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T is an array <br  />
+ <br  />
+ Remember that arrays stored at memory are converted into pointers, so it wont work with examples like: <br  />
+ <a class="el" href="namespace_aurora.html#a702c55e81747bef84bdb85671a815642" title="8-bits unsigned integer type">Aurora::u8</a> u[1]; <br  />
+ if(Aurora::Concepts::IsArray&lt;decltype(u)&gt;) &lt;- false, 'u' is already a pointer. </p>
+
+</div>
+</div>
 <a id="a61bb93dfa5f7e3669a42e7b42ebe9984"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61bb93dfa5f7e3669a42e7b42ebe9984">&#9670;&nbsp;</a></span>IsBasic</h2>
 
@@ -98,9 +251,201 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Returns if T is a basic type <br  />
+<p>Returns at compile-time whether or not T is a basic type <br  />
  <br  />
  Basic types are: bool, u8, s8, u16, s16, u32, s32, f32, u64, s64 and f64. </p>
+
+</div>
+</div>
+<a id="a204275c5ef875d8503cc58fee336cd38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204275c5ef875d8503cc58fee336cd38">&#9670;&nbsp;</a></span>IsClass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsClass = __is_class(T)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T is a class <br  />
+ <br  />
+ CLasses are: incomplete class, incomplete struct, class and struct. </p>
+
+</div>
+</div>
+<a id="a91ace13f1e640a3acc4e4de847fd7dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ace13f1e640a3acc4e4de847fd7dfd">&#9670;&nbsp;</a></span>IsConst</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsConst = IsConstClass&lt;T&gt;::Value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T has const qualifier. </p>
+
+</div>
+</div>
+<a id="a4ae8e282157abfee4b734fc63276101d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae8e282157abfee4b734fc63276101d">&#9670;&nbsp;</a></span>IsEnum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsEnum = __is_enum(T)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T is an enumeration <br  />
+ <br  />
+ Enumerations are: enum and enum class. </p>
+
+</div>
+</div>
+<a id="a7bbf83193fbda0d069de7c960961b400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbf83193fbda0d069de7c960961b400">&#9670;&nbsp;</a></span>IsFloatingPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsFloatingPoint = IsFloatingPointClass&lt;T&gt;::Value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T is a floating-point type <br  />
+ <br  />
+ Floating-point types are: f32 and f64. </p>
+
+</div>
+</div>
+<a id="a1efcbc6c0053d63a05c273ddd73caf9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1efcbc6c0053d63a05c273ddd73caf9b">&#9670;&nbsp;</a></span>IsInteger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsInteger = IsIntegerClass&lt;T&gt;::Value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T is an integer type <br  />
+ <br  />
+ Integer types are: bool, u8, s8, u16, s16, u32, s32, u64 and s64. </p>
+
+</div>
+</div>
+<a id="a39fb4993da77e1d46154387f17debf97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fb4993da77e1d46154387f17debf97">&#9670;&nbsp;</a></span>IsPointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsPointer = IsPointerClass&lt;T&gt;::Value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T is a pointer. </p>
+
+</div>
+</div>
+<a id="a8e8ec2933f9d94eadb8357ad6bbb3bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8ec2933f9d94eadb8357ad6bbb3bff">&#9670;&nbsp;</a></span>IsSigned</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsSigned = IsSignedClass&lt;T&gt;::Value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T is a signed type <br  />
+ <br  />
+ Signed types are: s8, s16, s32, f32, s64 and f64. </p>
+
+</div>
+</div>
+<a id="ac4a07331a41f9c03710679bd71f029f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a07331a41f9c03710679bd71f029f5">&#9670;&nbsp;</a></span>IsSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , const u64 Size&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsSize = sizeof(T) == Size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T size is the same as specified at Size. </p>
+
+</div>
+</div>
+<a id="a36dd4ea99a59d609f1ccfefe24e937bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36dd4ea99a59d609f1ccfefe24e937bb">&#9670;&nbsp;</a></span>IsUnion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsUnion = __is_union(T)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T is a union. </p>
+
+</div>
+</div>
+<a id="a142eeaf178f6171cfc7fa675d4c655e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142eeaf178f6171cfc7fa675d4c655e6">&#9670;&nbsp;</a></span>IsUnsigned</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsUnsigned = IsUnsignedClass&lt;T&gt;::Value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T is an unsigned type <br  />
+ <br  />
+ Unsigned types are: bool, u8, u16, u32 and u64. </p>
 
 </div>
 </div>
