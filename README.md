@@ -10,13 +10,17 @@ Remember, anything that's not documented isn't meant to be used by you.
 
 The documentation is embedded inside the folder Documentation/html.
 
-!BUILD WINDOWS
+## Build for Windows
 
 Download the project using Git by running the command:
 ```
 git clone https://github.com/SamuelAlonsoDev/Aurora.git
 ```
 
+
+
 Then run only once WindowsConfigure.bat and fill all the requirements.
+
+
 
 Run WindowsBuild.bat as many times to compile
