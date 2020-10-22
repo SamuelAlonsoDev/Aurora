@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['relocate_77',['Relocate',['../namespace_aurora_1_1_u_i_1_1_main_window.html#a009140884860413cd649be819c394a6c',1,'Aurora::UI::MainWindow']]],
-  ['resize_78',['Resize',['../namespace_aurora_1_1_u_i_1_1_main_window.html#ab0b92643f022f2fd75849679dc9beaf6',1,'Aurora::UI::MainWindow']]]
+  ['isconstantevaluated_83',['IsConstantEvaluated',['../namespace_aurora_1_1_concepts.html#a787beffa667fda2f43919f8f7e2fb8d8',1,'Aurora::Concepts']]]
 ];

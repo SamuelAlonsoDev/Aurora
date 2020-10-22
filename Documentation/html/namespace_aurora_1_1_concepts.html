@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Aurora::Concepts Namespace Reference</div>  </div>
@@ -89,6 +90,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#aa68ca61e9e7a680d0dffd5f2f5be9454">RemoveReferences</a> = typename RemoveReferencesClass&lt; T &gt;::Type</td></tr>
 <tr class="memdesc:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time T without references if any.  <a href="namespace_aurora_1_1_concepts.html#aa68ca61e9e7a680d0dffd5f2f5be9454">More...</a><br /></td></tr>
 <tr class="separator:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a787beffa667fda2f43919f8f7e2fb8d8"><td class="memItemLeft" align="right" valign="top">constexpr const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a787beffa667fda2f43919f8f7e2fb8d8">IsConstantEvaluated</a> () noexcept</td></tr>
+<tr class="memdesc:a787beffa667fda2f43919f8f7e2fb8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not the expression is being evaluated as a constant expression.  <a href="namespace_aurora_1_1_concepts.html#a787beffa667fda2f43919f8f7e2fb8d8">More...</a><br /></td></tr>
+<tr class="separator:a787beffa667fda2f43919f8f7e2fb8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -138,6 +145,12 @@ Variables</h2></td></tr>
 <tr class="memitem:a39fb4993da77e1d46154387f17debf97"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a39fb4993da77e1d46154387f17debf97">IsPointer</a> = IsPointerClass&lt;T&gt;::Value</td></tr>
 <tr class="memdesc:a39fb4993da77e1d46154387f17debf97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is a pointer.  <a href="namespace_aurora_1_1_concepts.html#a39fb4993da77e1d46154387f17debf97">More...</a><br /></td></tr>
 <tr class="separator:a39fb4993da77e1d46154387f17debf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b08e1554d60ff4f878d9732e5c15e6"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
+<tr class="memitem:ab8b08e1554d60ff4f878d9732e5c15e6"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#ab8b08e1554d60ff4f878d9732e5c15e6">IsSame</a> = IsSameClass&lt;T, U&gt;::Value</td></tr>
+<tr class="memdesc:ab8b08e1554d60ff4f878d9732e5c15e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether T and U are the same type <br  />
+ <br  />
+ Remember that derived types are not the same.  <a href="namespace_aurora_1_1_concepts.html#ab8b08e1554d60ff4f878d9732e5c15e6">More...</a><br /></td></tr>
+<tr class="separator:ab8b08e1554d60ff4f878d9732e5c15e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e8ec2933f9d94eadb8357ad6bbb3bff"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a8e8ec2933f9d94eadb8357ad6bbb3bff"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a8e8ec2933f9d94eadb8357ad6bbb3bff">IsSigned</a> = IsSignedClass&lt;T&gt;::Value</td></tr>
 <tr class="memdesc:a8e8ec2933f9d94eadb8357ad6bbb3bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T is a signed type <br  />
@@ -215,6 +228,36 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns at compile-time T without references if any. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a787beffa667fda2f43919f8f7e2fb8d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787beffa667fda2f43919f8f7e2fb8d8">&#9670;&nbsp;</a></span>IsConstantEvaluated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const bool Aurora::Concepts::IsConstantEvaluated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not the expression is being evaluated as a constant expression. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_concepts_2_is_constant_evaluated_8cpp-example.html#a0">Concepts/IsConstantEvaluated.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -374,6 +417,26 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns at compile-time whether or not T is a pointer. </p>
+
+</div>
+</div>
+<a id="ab8b08e1554d60ff4f878d9732e5c15e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b08e1554d60ff4f878d9732e5c15e6">&#9670;&nbsp;</a></span>IsSame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsSame = IsSameClass&lt;T, U&gt;::Value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether T and U are the same type <br  />
+ <br  />
+ Remember that derived types are not the same. </p>
 
 </div>
 </div>

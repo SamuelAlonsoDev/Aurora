@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Aurora: Examples</title>
+<title>Aurora: Concepts/IsConstantEvaluated.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,52 +64,34 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Examples</div>  </div>
+<div class="title">Concepts/IsConstantEvaluated.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all examples:</div><ul>
-<li><a class="el" href="_concepts_2_is_array_8cpp-example.html">Concepts/IsArray.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_basic_8cpp-example.html">Concepts/IsBasic.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_class_8cpp-example.html">Concepts/IsClass.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_const_8cpp-example.html">Concepts/IsConst.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_constant_evaluated_8cpp-example.html">Concepts/IsConstantEvaluated.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_enum_8cpp-example.html">Concepts/IsEnum.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_floating_point_8cpp-example.html">Concepts/IsFloatingPoint.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_integer_8cpp-example.html">Concepts/IsInteger.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_pointer_8cpp-example.html">Concepts/IsPointer.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_same_8cpp-example.html">Concepts/IsSame.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_signed_8cpp-example.html">Concepts/IsSigned.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_size_8cpp-example.html">Concepts/IsSize.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_union_8cpp-example.html">Concepts/IsUnion.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_unsigned_8cpp-example.html">Concepts/IsUnsigned.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_is_volatile_8cpp-example.html">Concepts/IsVolatile.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_remove_const_8cpp-example.html">Concepts/RemoveConst.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_remove_pointer_8cpp-example.html">Concepts/RemovePointer.cpp</a></li>
-
-<li><a class="el" href="_concepts_2_remove_references_8cpp-example.html">Concepts/RemoveReferences.cpp</a></li>
-
-<li><a class="el" href="_core_2_types_8cpp-example.html">Core/Types.cpp</a></li>
-
-<li><a class="el" href="_u_i_2_main_window_8cpp-example.html">UI/MainWindow.cpp</a></li>
-
-</ul>
-</div><!-- contents -->
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_is_constant_evaluated_8hpp.html">Concepts/IsConstantEvaluated.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line">[[nodiscard]] <span class="keyword">inline</span> constexpr <span class="keyword">const</span> <span class="keywordtype">bool</span> compile_time_foo() noexcept</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> <a name="a0"></a><a class="code" href="namespace_aurora_1_1_concepts.html#a787beffa667fda2f43919f8f7e2fb8d8">Aurora::Concepts::IsConstantEvaluated</a>();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> run_time_foo() noexcept</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="namespace_aurora_1_1_concepts.html#a787beffa667fda2f43919f8f7e2fb8d8">Aurora::Concepts::IsConstantEvaluated</a>();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    constexpr <span class="keywordtype">bool</span> n = compile_time_foo();</div>
+<div class="line">    <span class="keywordtype">bool</span> b = run_time_foo();</div>
+<div class="line">    std::cout &lt;&lt; std::boolalpha &lt;&lt;</div>
+<div class="line">    <span class="stringliteral">&quot;Is &#39;compile_time_foo&#39; evaluated as a constant expression? &quot;</span> &lt;&lt; n &lt;&lt;</div>
+<div class="line">    <span class="stringliteral">&quot;\nIs &#39;run_time_foo&#39; evaluated as a constant expression? &quot;</span> &lt;&lt; b;</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><!-- contents -->
+<div class="ttc" id="a_is_constant_evaluated_8hpp_html"><div class="ttname"><a href="_is_constant_evaluated_8hpp.html">IsConstantEvaluated.hpp</a></div></div>
+<div class="ttc" id="anamespace_aurora_1_1_concepts_html_a787beffa667fda2f43919f8f7e2fb8d8"><div class="ttname"><a href="namespace_aurora_1_1_concepts.html#a787beffa667fda2f43919f8f7e2fb8d8">Aurora::Concepts::IsConstantEvaluated</a></div><div class="ttdeci">constexpr const bool IsConstantEvaluated() noexcept</div><div class="ttdoc">Returns at compile-time whether or not the expression is being evaluated as a constant expression.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

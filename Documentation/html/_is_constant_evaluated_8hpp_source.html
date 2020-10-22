@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Aurora: Namespace Members</title>
+<title>Aurora: Documentation/Concepts/IsConstantEvaluated.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,7 +47,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,67 +61,26 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f9dfd35b172a0e2036ace76497fb239b.html">Documentation</a></li><li class="navelem"><a class="el" href="dir_e332035a081af9fbd7f01748256ac8ce.html">Concepts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">IsConstantEvaluated.hpp</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>Exit
-: <a class="el" href="namespace_aurora_1_1_u_i_1_1_main_window.html#acf55b9c7dfb6924731f8170bac5043cc">Aurora::UI::MainWindow</a>
-</li>
-<li>Height
-: <a class="el" href="namespace_aurora_1_1_u_i_1_1_main_window.html#a72d1532cd72402ffdc4615601573d761">Aurora::UI::MainWindow</a>
-</li>
-<li>IsArray
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a3feb7b906fc55e1c446eee0c678d0e0b">Aurora::Concepts</a>
-</li>
-<li>IsBasic
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a61bb93dfa5f7e3669a42e7b42ebe9984">Aurora::Concepts</a>
-</li>
-<li>IsClass
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a204275c5ef875d8503cc58fee336cd38">Aurora::Concepts</a>
-</li>
-<li>IsConst
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a91ace13f1e640a3acc4e4de847fd7dfd">Aurora::Concepts</a>
-</li>
-<li>IsEnum
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a4ae8e282157abfee4b734fc63276101d">Aurora::Concepts</a>
-</li>
-<li>IsFloatingPoint
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a7bbf83193fbda0d069de7c960961b400">Aurora::Concepts</a>
-</li>
-<li>IsInteger
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a1efcbc6c0053d63a05c273ddd73caf9b">Aurora::Concepts</a>
-</li>
-<li>IsPointer
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a39fb4993da77e1d46154387f17debf97">Aurora::Concepts</a>
-</li>
-<li>IsSame
-: <a class="el" href="namespace_aurora_1_1_concepts.html#ab8b08e1554d60ff4f878d9732e5c15e6">Aurora::Concepts</a>
-</li>
-<li>IsSigned
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a8e8ec2933f9d94eadb8357ad6bbb3bff">Aurora::Concepts</a>
-</li>
-<li>IsSize
-: <a class="el" href="namespace_aurora_1_1_concepts.html#ac4a07331a41f9c03710679bd71f029f5">Aurora::Concepts</a>
-</li>
-<li>IsUnion
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a36dd4ea99a59d609f1ccfefe24e937bb">Aurora::Concepts</a>
-</li>
-<li>IsUnsigned
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a142eeaf178f6171cfc7fa675d4c655e6">Aurora::Concepts</a>
-</li>
-<li>IsVolatile
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a30d1204757c0d073e5f5ec523fa190d4">Aurora::Concepts</a>
-</li>
-<li>Width
-: <a class="el" href="namespace_aurora_1_1_u_i_1_1_main_window.html#a9d469ba02ea1eb1c6f88eefaf8a19c08">Aurora::UI::MainWindow</a>
-</li>
-<li>X
-: <a class="el" href="namespace_aurora_1_1_u_i_1_1_main_window.html#abec32dfca8d14a5a907b2d674a940345">Aurora::UI::MainWindow</a>
-</li>
-<li>Y
-: <a class="el" href="namespace_aurora_1_1_u_i_1_1_main_window.html#a52ec3c463219073b3abc94ed5f495fac">Aurora::UI::MainWindow</a>
-</li>
-</ul>
-</div><!-- contents -->
+<a href="_is_constant_evaluated_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_aurora.html">Aurora</a></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">namespace </span>Concepts</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespace_aurora_1_1_concepts.html#a787beffa667fda2f43919f8f7e2fb8d8">    6</a></span>&#160;        [[nodiscard]] <span class="keyword">inline</span> constexpr <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="namespace_aurora_1_1_concepts.html#a787beffa667fda2f43919f8f7e2fb8d8">IsConstantEvaluated</a>() noexcept;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespace_aurora_html"><div class="ttname"><a href="namespace_aurora.html">Aurora</a></div><div class="ttdef"><b>Definition:</b> IsArray.hpp:2</div></div>
+<div class="ttc" id="anamespace_aurora_1_1_concepts_html_a787beffa667fda2f43919f8f7e2fb8d8"><div class="ttname"><a href="namespace_aurora_1_1_concepts.html#a787beffa667fda2f43919f8f7e2fb8d8">Aurora::Concepts::IsConstantEvaluated</a></div><div class="ttdeci">constexpr const bool IsConstantEvaluated() noexcept</div><div class="ttdoc">Returns at compile-time whether or not the expression is being evaluated as a constant expression.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
