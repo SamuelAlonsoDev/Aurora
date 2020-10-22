@@ -23,5 +23,7 @@ var searchData=
   ['isunion_28',['IsUnion',['../namespace_aurora_1_1_concepts.html#a36dd4ea99a59d609f1ccfefe24e937bb',1,'Aurora::Concepts']]],
   ['isunion_2ehpp_29',['IsUnion.hpp',['../_is_union_8hpp.html',1,'']]],
   ['isunsigned_30',['IsUnsigned',['../namespace_aurora_1_1_concepts.html#a142eeaf178f6171cfc7fa675d4c655e6',1,'Aurora::Concepts']]],
-  ['isunsigned_2ehpp_31',['IsUnsigned.hpp',['../_is_unsigned_8hpp.html',1,'']]]
+  ['isunsigned_2ehpp_31',['IsUnsigned.hpp',['../_is_unsigned_8hpp.html',1,'']]],
+  ['isvolatile_32',['IsVolatile',['../namespace_aurora_1_1_concepts.html#a30d1204757c0d073e5f5ec523fa190d4',1,'Aurora::Concepts']]],
+  ['isvolatile_2ehpp_33',['IsVolatile.hpp',['../_is_volatile_8hpp.html',1,'']]]
 ];
