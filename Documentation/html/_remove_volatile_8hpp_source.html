@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Aurora: Namespace Members</title>
+<title>Aurora: Documentation/Concepts/RemoveVolatile.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,7 +47,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,52 +61,26 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f9dfd35b172a0e2036ace76497fb239b.html">Documentation</a></li><li class="navelem"><a class="el" href="dir_e332035a081af9fbd7f01748256ac8ce.html">Concepts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">RemoveVolatile.hpp</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>f32
-: <a class="el" href="namespace_aurora.html#a886253151e87b93c68b3a04f47141c8d">Aurora</a>
-</li>
-<li>f64
-: <a class="el" href="namespace_aurora.html#a6565e2152dc39b4c682392deb16c8b9c">Aurora</a>
-</li>
-<li>RemoveConst
-: <a class="el" href="namespace_aurora_1_1_concepts.html#abcfd987daa3ea6520ec4f39d072b5b08">Aurora::Concepts</a>
-</li>
-<li>RemovePointer
-: <a class="el" href="namespace_aurora_1_1_concepts.html#aa1d5d22d653c95c01b9d267fe52f2c5a">Aurora::Concepts</a>
-</li>
-<li>RemoveReferences
-: <a class="el" href="namespace_aurora_1_1_concepts.html#aa68ca61e9e7a680d0dffd5f2f5be9454">Aurora::Concepts</a>
-</li>
-<li>RemoveVolatile
-: <a class="el" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">Aurora::Concepts</a>
-</li>
-<li>s16
-: <a class="el" href="namespace_aurora.html#a9b77b4d747769c0a17ae115426534cb9">Aurora</a>
-</li>
-<li>s32
-: <a class="el" href="namespace_aurora.html#aa10eec40b5f01940957515b372cf62af">Aurora</a>
-</li>
-<li>s64
-: <a class="el" href="namespace_aurora.html#ae932997fb0e0ace971f3d666185daa22">Aurora</a>
-</li>
-<li>s8
-: <a class="el" href="namespace_aurora.html#acb11ea86ad44649a1c932cbbf2a1f249">Aurora</a>
-</li>
-<li>u16
-: <a class="el" href="namespace_aurora.html#ab9bfb6dc1aea80a006fb536c1e9c2d10">Aurora</a>
-</li>
-<li>u32
-: <a class="el" href="namespace_aurora.html#a3a65b4b5ccd49462165ec09c783b3f32">Aurora</a>
-</li>
-<li>u64
-: <a class="el" href="namespace_aurora.html#ac6e7e548c0d9c68fca3dc9b5bf52c728">Aurora</a>
-</li>
-<li>u8
-: <a class="el" href="namespace_aurora.html#a702c55e81747bef84bdb85671a815642">Aurora</a>
-</li>
-</ul>
-</div><!-- contents -->
+<a href="_remove_volatile_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_aurora.html">Aurora</a></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">namespace </span>Concepts</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">    6</a></span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">using</span> <a class="code" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">RemoveVolatile</a> = <span class="keyword">typename</span> <a class="code" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">RemoveVolatile&lt;T&gt;::Type</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespace_aurora_1_1_concepts_html_a353b9a76cb8652f2c02a9d397a3bc696"><div class="ttname"><a href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">Aurora::Concepts::RemoveVolatile</a></div><div class="ttdeci">typename RemoveVolatile&lt; T &gt;::Type RemoveVolatile</div><div class="ttdoc">Returns at compile-time T without volatile qualifier if any.</div><div class="ttdef"><b>Definition:</b> RemoveVolatile.hpp:6</div></div>
+<div class="ttc" id="anamespace_aurora_html"><div class="ttname"><a href="namespace_aurora.html">Aurora</a></div><div class="ttdef"><b>Definition:</b> IsArray.hpp:2</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

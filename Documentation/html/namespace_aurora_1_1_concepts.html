@@ -90,6 +90,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#aa68ca61e9e7a680d0dffd5f2f5be9454">RemoveReferences</a> = typename RemoveReferencesClass&lt; T &gt;::Type</td></tr>
 <tr class="memdesc:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time T without references if any.  <a href="namespace_aurora_1_1_concepts.html#aa68ca61e9e7a680d0dffd5f2f5be9454">More...</a><br /></td></tr>
 <tr class="separator:aa68ca61e9e7a680d0dffd5f2f5be9454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353b9a76cb8652f2c02a9d397a3bc696"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a353b9a76cb8652f2c02a9d397a3bc696"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">RemoveVolatile</a> = typename <a class="el" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">RemoveVolatile</a>&lt; T &gt;::Type</td></tr>
+<tr class="memdesc:a353b9a76cb8652f2c02a9d397a3bc696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time T without volatile qualifier if any.  <a href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">More...</a><br /></td></tr>
+<tr class="separator:a353b9a76cb8652f2c02a9d397a3bc696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -171,6 +175,10 @@ Variables</h2></td></tr>
  <br  />
  Unsigned types are: bool, u8, u16, u32 and u64.  <a href="namespace_aurora_1_1_concepts.html#a142eeaf178f6171cfc7fa675d4c655e6">More...</a><br /></td></tr>
 <tr class="separator:a142eeaf178f6171cfc7fa675d4c655e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825f40ab384ffb53a4beadc8c000abfe"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a825f40ab384ffb53a4beadc8c000abfe"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a825f40ab384ffb53a4beadc8c000abfe">IsVoid</a> = <a class="el" href="namespace_aurora_1_1_concepts.html#ab8b08e1554d60ff4f878d9732e5c15e6">IsSame</a>&lt;<a class="el" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">RemoveVolatile</a>&lt;<a class="el" href="namespace_aurora_1_1_concepts.html#abcfd987daa3ea6520ec4f39d072b5b08">RemoveConst</a>&lt;T&gt;&gt;, void&gt;</td></tr>
+<tr class="memdesc:a825f40ab384ffb53a4beadc8c000abfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T, without const and volatile qualifiers, is void.  <a href="namespace_aurora_1_1_concepts.html#a825f40ab384ffb53a4beadc8c000abfe">More...</a><br /></td></tr>
+<tr class="separator:a825f40ab384ffb53a4beadc8c000abfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d1204757c0d073e5f5ec523fa190d4"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a30d1204757c0d073e5f5ec523fa190d4"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_aurora_1_1_concepts.html#a30d1204757c0d073e5f5ec523fa190d4">IsVolatile</a> = IsVolatileClass&lt;T&gt;::Value</td></tr>
 <tr class="memdesc:a30d1204757c0d073e5f5ec523fa190d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns at compile-time whether or not T have volatile qualifier.  <a href="namespace_aurora_1_1_concepts.html#a30d1204757c0d073e5f5ec523fa190d4">More...</a><br /></td></tr>
@@ -228,6 +236,24 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns at compile-time T without references if any. </p>
+
+</div>
+</div>
+<a id="a353b9a76cb8652f2c02a9d397a3bc696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353b9a76cb8652f2c02a9d397a3bc696">&#9670;&nbsp;</a></span>RemoveVolatile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">Aurora::Concepts::RemoveVolatile</a> = typedef typename <a class="el" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">RemoveVolatile</a>&lt;T&gt;::Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time T without volatile qualifier if any. </p>
 
 </div>
 </div>
@@ -513,6 +539,24 @@ template&lt;class T &gt; </div>
 <p>Returns at compile-time whether or not T is an unsigned type <br  />
  <br  />
  Unsigned types are: bool, u8, u16, u32 and u64. </p>
+
+</div>
+</div>
+<a id="a825f40ab384ffb53a4beadc8c000abfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825f40ab384ffb53a4beadc8c000abfe">&#9670;&nbsp;</a></span>IsVoid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept Aurora::Concepts::IsVoid = <a class="el" href="namespace_aurora_1_1_concepts.html#ab8b08e1554d60ff4f878d9732e5c15e6">IsSame</a>&lt;<a class="el" href="namespace_aurora_1_1_concepts.html#a353b9a76cb8652f2c02a9d397a3bc696">RemoveVolatile</a>&lt;<a class="el" href="namespace_aurora_1_1_concepts.html#abcfd987daa3ea6520ec4f39d072b5b08">RemoveConst</a>&lt;T&gt;&gt;, void&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns at compile-time whether or not T, without const and volatile qualifiers, is void. </p>
 
 </div>
 </div>

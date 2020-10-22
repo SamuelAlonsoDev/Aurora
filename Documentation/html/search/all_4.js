@@ -28,6 +28,8 @@ var searchData=
   ['isunion_2ehpp_33',['IsUnion.hpp',['../_is_union_8hpp.html',1,'']]],
   ['isunsigned_34',['IsUnsigned',['../namespace_aurora_1_1_concepts.html#a142eeaf178f6171cfc7fa675d4c655e6',1,'Aurora::Concepts']]],
   ['isunsigned_2ehpp_35',['IsUnsigned.hpp',['../_is_unsigned_8hpp.html',1,'']]],
-  ['isvolatile_36',['IsVolatile',['../namespace_aurora_1_1_concepts.html#a30d1204757c0d073e5f5ec523fa190d4',1,'Aurora::Concepts']]],
-  ['isvolatile_2ehpp_37',['IsVolatile.hpp',['../_is_volatile_8hpp.html',1,'']]]
+  ['isvoid_36',['IsVoid',['../namespace_aurora_1_1_concepts.html#a825f40ab384ffb53a4beadc8c000abfe',1,'Aurora::Concepts']]],
+  ['isvoid_2ehpp_37',['IsVoid.hpp',['../_is_void_8hpp.html',1,'']]],
+  ['isvolatile_38',['IsVolatile',['../namespace_aurora_1_1_concepts.html#a30d1204757c0d073e5f5ec523fa190d4',1,'Aurora::Concepts']]],
+  ['isvolatile_2ehpp_39',['IsVolatile.hpp',['../_is_volatile_8hpp.html',1,'']]]
 ];
